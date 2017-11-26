@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="#promise     var gitment = new Gitment({   id: &apos;页面 ID&apos;, // 可选。默认为 location.href   owner: &apos;apussycat&apos;,   repo: &apos;apussycat.github.io&apos">
+<meta name="description" content="#promise">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Promise与async&#x2F;await">
 <meta property="og:url" content="http://yoursite.com/2017/11/26/Promise与async-await/index.html">
 <meta property="og:site_name" content="apussycat">
-<meta property="og:description" content="#promise     var gitment = new Gitment({   id: &apos;页面 ID&apos;, // 可选。默认为 location.href   owner: &apos;apussycat&apos;,   repo: &apos;apussycat.github.io&apos;,   oauth: {     client_id: &apos;555791273e6e57347374&apos;,     client_secret">
+<meta property="og:description" content="#promise">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-26T02:13:02.256Z">
+<meta property="og:updated_time" content="2017-11-26T02:26:12.220Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Promise与async&#x2F;await">
-<meta name="twitter:description" content="#promise     var gitment = new Gitment({   id: &apos;页面 ID&apos;, // 可选。默认为 location.href   owner: &apos;apussycat&apos;,   repo: &apos;apussycat.github.io&apos;,   oauth: {     client_id: &apos;555791273e6e57347374&apos;,     client_secret">
+<meta name="twitter:description" content="#promise">
 
 
 
@@ -297,6 +297,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/11/26/Promise与async-await/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2017/11/26/Promise与async-await/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -333,21 +343,6 @@
 
       
         <p>#promise</p>
-<p><div id="container"></div></p>
-<p><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"></p>
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: '页面 ID', // 可选。默认为 location.href
-  owner: 'apussycat',
-  repo: 'apussycat.github.io',
-  oauth: {
-    client_id: '555791273e6e57347374',
-    client_secret: '558986f3dd5d28ea307e6a2a94b72518d3ec2547',
-  },
-})
-gitment.render('container')
-</script>
 
       
     </div>
@@ -392,6 +387,13 @@ gitment.render('container')
 
 
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
 
   
 
@@ -640,6 +642,48 @@ gitment.render('container')
 
 
 
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'apussycat',
+            repo: 'apussycat.github.io',
+            
+            lang: "zh-Hans" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '558986f3dd5d28ea307e6a2a94b72518d3ec2547',
+            
+                client_id: '555791273e6e57347374'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
 
 
 
